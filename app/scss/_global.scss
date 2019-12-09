@@ -17,10 +17,9 @@ ul,li{
   list-style: none;
 }
 body{
-  font-family: 'Roboto', sans-serif;
+  @include f400;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 400;
   color: $text;
 }
 .container{
@@ -42,7 +41,7 @@ body{
   margin-bottom: 30px;
   text-align: center;
   color: $bg;
-  font-weight: 700;
+  @include f700;
   font-size: 36px;
   line-height: 60px;
 }
