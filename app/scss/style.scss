@@ -271,6 +271,8 @@
     }
   }
 }
+// end product-slider
+// srtart advantages
 .advantages{
   background-color: $bg;
   padding: 115px 0px 110px;
@@ -302,8 +304,6 @@
           }
         }
       } 
-      
-     
     }
     &-imeges{
       margin-bottom: 28px;
@@ -332,6 +332,47 @@
     }
   }
 }
+// end advantages
+// start author
+.author{
+  min-height: 751px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box{
+    width: 653px;
+    height: 217px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  &__text{
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 270px;
+    color: #fff;
+    margin-right: 40px;
+  }
+  &__btn{
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    padding: 13px 42px;
+    }
+  }
+
+
+
+
+
+
+// end author
 
 
 
@@ -340,5 +381,4 @@
 
 
 
-// end product-slider
 
