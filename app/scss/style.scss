@@ -405,9 +405,107 @@
   }
 }
 //end tutorials
-
-
-
+// start footer
+.footer{
+  background-color: $bg;
+  &__inner{
+    padding: 100px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+.footer__items{
+  max-width: 270px;
+  width: 100%;
+  &-title{
+    @include Raleway700;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 52px;
+      height: 3px;
+      background-color: $green;
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+    }
+  }
+  &-text{
+      font-size: 15px;
+      color: #b7c3c8;
+      margin-bottom: 33px;
+    }
+    &-info{
+      font-size: 14px;
+      color: #fff;
+      margin-top: 20px;
+      padding-left: 30px;
+    }
+    &-list{
+      li{
+         padding-left: 21px;
+        & + li{
+          margin-top: 10px;
+        }
+      }
+      a{
+        font-size: 15px;
+        color: #b7c3c8;
+      }
+    }
+}
+.footer__form{
+  position: relative;
+  &-title{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  input{
+    display: block;
+    max-width: 260px;
+    min-height: 40px;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 42px;
+    color: #fff;
+    background-color: #2f3c43;
+    border: none;
+    box-shadow: -0.9px -1px 11px #000;
+    &::placeholder{
+      font-size: 14px;
+      color: #697378;
+    }
+  } 
+    button{
+      display: block;
+      position: absolute;
+      border: none;
+      width: 43px;
+      height: 40px;
+      background-color: $green;
+      bottom: 0;
+      right: 11px;
+    }
+}
+.footer__col{
+  max-width: 230px;
+  widows: 100%;
+} 
+.footer__copy{
+  border-top: 1px solid #424d53;
+  font-size: 15px;
+  @include f400;
+  color: #919699;
+  text-align: center;
+  padding: 25px 0px 30px;
+}
+// end footer
 
 
 
