@@ -209,6 +209,7 @@
     align-items: center;
     min-height: 68px;
     padding: 10px 30px;
+   
   }
   &-author{
     display: flex;
@@ -445,18 +446,46 @@
       color: #fff;
       margin-top: 20px;
       padding-left: 30px;
+      @include f500;
+      position: relative;
+       &::before{
+         position: absolute;
+        content: "\f041";
+        font-family: 'icomoon';
+        left: 0;
+        font-size: 18px;
+        color: $green;
+      }
+    }
+    .info-phone{
+      &::before{
+        content: "\f095";
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: $green;
+      }
     }
     &-list{
       li{
          padding-left: 21px;
+         position: relative;
         & + li{
           margin-top: 10px;
+        }
+        &::before{
+          position: absolute;
+        content: "\f105";
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: $green;
+        left: 0;  
         }
       }
       a{
         font-size: 15px;
         color: #b7c3c8;
       }
+      
     }
 }
 .footer__form{
@@ -491,10 +520,47 @@
       background-color: $green;
       bottom: 0;
       right: 11px;
+      cursor: pointer;
+      &::before{
+        position: absolute;
+        content: "\f124";
+        font-family: 'icomoon';
+        font-size: 20px;
+        color: #fff;
+        top: 8px;
+        right: 14px;
+      }
     }
 }
+.foter__social-link{
+  margin-bottom: 35px;
+  li{
+    display: inline-block;
+    & +li{
+      margin-left: 7px;
+    }
+    a{
+      width: 28px;
+      height: 28px;
+      background-image: url(../img/spritesheet.png);
+    }
+  }
+}
+
+.link-tvitter{
+  background-position:  56px 0;
+}
+.link-youtube{
+background-position: 0 28px;
+}
+.link-pinterest{
+  background-position: -28px 28px;
+}
+.link-liledin{
+background-position: 28px 0;
+}
 .footer__col{
-  max-width: 230px;
+  max-width: 220px;
   widows: 100%;
 } 
 .footer__copy{
