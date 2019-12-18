@@ -19,7 +19,8 @@
           <div class="container">
             <div class="header__top-inner">
               <div class="header__logo">
-                <a href="#">
+                <a href="http://localhost:3000">
+      
                   <img src="img/logo.png" alt="">
                 </a>
               </div>
@@ -33,16 +34,139 @@
                 </a>
               </div>
               <div class="header__box">
-                <a class="basced" href="#"></a>
-                <a href="#" class="header__btn header__btn-Login">Login</a>
-                <a href="#" class="header__btn header__btn-Register">Register</a>
+                <div class="header__circle-box">
+                  <div class="notification__box">
+                    <a class="notification header__circle active icon-bell-o" href="#"> <span>8</span></a>
+                    <div class="ciecle__menu notification__menu">
+                      <a href="#" class="ciecle__item icon-bell-o icons__color">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                      <a href="#" class="ciecle__item icon-bell-o">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                      <a href="#" class="ciecle__item icon-bell-o">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="message__box">
+                    <a class="message header__circle active icon-envelope-o" href="#"><span>5</span></a>
+                    <div class="ciecle__menu message__menu">
+                      <a href="#" class="ciecle__item icon-envelope-o icons__color">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-name">Kazi Fahim</div>
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                      <a href="#" class="ciecle__item icon-envelope-o">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-name">Kazi Fahim</div>
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                      <a href="#" class="ciecle__item icon-mail-reply">
+                        <img class="ciecle__images" src="img/content/message.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-name">Kazi Fahim</div>
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-data">01 Decm,2016</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="basket__box">
+                    <a class="basket header__circle active icon-shopping-cart" href="#"><span>8</span></a>
+                    <div class="ciecle__menu">
+                      <a href="#" class="ciecle__item padding__fics-top">
+                        <img class="ciecle__images" src="img/content/basket-items.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-name">Grand Ballet</div>
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-price">$59</div>
+                        </div>
+                      </a>
+                      <a href="#" class="ciecle__item padding__fics-center">
+                        <img class="ciecle__images" src="img/content/basket-items2.jpg" alt="">
+                        <div class="ciecle__info">
+                          <div class="ciecle__info-name">Apple Device</div>
+                          <div class="ciecle__info-thema">WordPress</div>
+                          <div class="ciecle__info-price">$59</div>
+                        </div>
+                      </a>
+                      <div class="basket__summ padding__fics-bottom">
+                        <div class="basket__title">
+                          <div class="basket__total">Total</div>
+                          <div class="basket__price">$118</div>
+                        </div>
+                        <a class="basket__btn" href="#">Go to Cart</a>
+                        <a class="basket__btn basket__btn-checkout" href="#">Go to Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user__box-inner">
+                  <a class="user" href="#">
+                    <div class="user__box">
+                      <div class="user__box-images">
+                        <img src="img/content/user-login.jpg" alt="">
+                      </div>
+                      <div class="user__box-items">
+                        <div class="user__name">
+                          Mike Hussy
+                        </div>
+                        <div class="user__price">
+                          $171.00
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <div class="user__menu">
+                    <ul class="user__list">
+                      <li><a href="#">Profile Page</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Account Setting</a></li>
+                      <li><a href="#">Downloads</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="#">Upload Item</a></li>
+                      <li><a href="#">Statement</a></li>
+                      <li><a href="#">Withdraws</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" id="login" class="header__btn header__btn-Login header__btn-Login--off">Login</a>
+                <a href="#" class="header__btn header__btn-Register header__btn-Login--off">Register</a>
+                <a href="#" class="header__btn header__btn-Logout header__btn-Login--on">Logout</a>
               </div>
+              <div class="header__btn-menu icon-user"></div>
             </div>
           </div>
         </div>
+      
         <div class="header__menu">
           <div class="container">
             <nav class="menu">
+              <div class="menu__btn">
+                <div class="menu__row"></div>
+                <div class="menu__row"></div>
+                <div class="menu__row"></div>
+              </div>
               <ul class="menu__list">
                 <li>
                   <a href="#">
@@ -80,7 +204,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="http://localhost:3000/new-items.html">
                     Pages
                   </a>
                 </li>
@@ -90,7 +214,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="border--none" href="#">
                     Help
                   </a>
                 </li>
@@ -99,6 +223,7 @@
           </div>
         </div>
       </header>
+
 
       <section class="search page-search" style="background-image: url(img/bg/search-bg.jpg);">
         <div class="container">
@@ -260,11 +385,317 @@
                   <button class="icon-sort-amount-desc"></button>Sort by: New Items<button class="icon-sort"></button>
                 </div>
                 <div>
-                  <button  class="icon-th-large active"></button>
-                  <button  class="icon-th-list"></button>
+                  <button class="icon-th-large active"></button>
+                  <button class="icon-th-list"></button>
                 </div>
               </div>
               <div class="product-page__items">
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item addclass">
+                  <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
+                  <div class="product__item-content">
+                    <div class="product__item-name">
+                      <a class="product__item-title" href="#!">
+                        Responsive Mobile APP
+                      </a>
+                      <a class="product__item-cotegory" href="#!">
+                        Site Template
+                      </a>
+                      <div class="product__item-text">
+                        Pimply dummy text of the printing and typesetting industry.
+                      </div>
+                    </div>
+                    <div class="product__item-price">
+                      $19
+                      <span>Salesb (14)</span>
+                    </div>
+                  </div>
+                  <div class="product__item-info">
+                    <a class="product__item-author" href="#!">
+                      <div class="avatar" style="background-image:url(img/content/uzer.jpg);"></div>
+                      <span>Radiustheme</span>
+                    </a>
+                    <div class="product__item-star">
+                      <div class="reiteng-user"></div>
+                      (<span>05</span>)
+                    </div>
+                    <div class="product__item-list">
+                      <a class="icon-comment-o" href="#">(<span>10</span>)</a>
+                      <div class="icon-heart-o">(<span>20</span>)</div>
+                    </div>
+                  </div>
+                </div>
                 <div class="product__item addclass">
                   <a class="product__item-img" href="#" style="background-image: url(img/content/items-bg.jpg);"></a>
                   <div class="product__item-content">
@@ -390,7 +821,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__items">
+          <div class="footer__items footer__col-adress">
             <div class="footer__items-title">
               About Company
             </div>
@@ -426,7 +857,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="footer__items">
+          <div class="footer__items footer__col-sociall">
             <div class="footer__items-title">
               Follow Us On
             </div>
@@ -451,6 +882,7 @@
         © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
       </div>
     </footer>
+
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
