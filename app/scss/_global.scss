@@ -86,6 +86,8 @@ body{
       &:last-child{
         a,
         span{
+          font-size: 15px;
+          @include f500;
           color: $bg;
         }
       }
