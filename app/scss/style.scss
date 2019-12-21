@@ -1716,7 +1716,8 @@ button.icon-sort-amount-desc {
 // staer 404
 .about__us-wrapper,
 .page__404-wrapper,
-.contact__wrapper {
+.contact__wrapper,
+.personal__info-inner {
   background-color: #fff;
   border: 1px solid #dcdcdc;
   margin-bottom: 150px;
@@ -1724,7 +1725,8 @@ button.icon-sort-amount-desc {
 }
 .about__us-head,
 .page__404-head,
-.contact__head {
+.contact__head,
+.personal__Info-head {
   font-size: 24px;
   color: #444;
   padding: 25px 29px 29px;
@@ -1940,4 +1942,124 @@ button.icon-sort-amount-desc {
   }
 }
 // end contacts
+// start personal-Info
+.settings__wrapper{
+  margin-bottom: 150px;
+  display: flex;
+}
+.personal__info-inner{
+  margin-bottom: 0;
+}
+.settings__tabs{
+  max-width: 270px;
+  width: 100%;
+  margin-right: 30px;
+}
+.tabs__list{
+  
+  
+  text-align: left;
+  display: block;
+  span{ 
+  }
+}
+.settings__tabs{
+  border: 1px solid #dedede;
+  background-color: #fff;
+  height: 100%;
+  li.tab{
+    padding: 15px 21px;
+    display: block;
+    height: 51px;
+    border-bottom: 1px solid #dedede;
+    border-left: none;
+    &:last-child{
+      border-bottom: none;
+    }
+    &.active{
+      border-bottom: 2px solid $green;
+      // transform: rotateY(180deg);
+      
+      span{
+        &::before{
+          transition: all .5s;
+          transform: rotateZ(90deg);
+        }
+      }
+      
+    } 
+  }
+  .tabs{
+    border-bottom: none;
+    .tab{
+      & + .tab{
+        border-left: none;
+      }
+    }
+   
+  }
+  span{
+    height: 100%;
+    padding: 0px 0px 0px 28px;
+    display: block;
+    font-size: 14px;
+    color: #37474f;
+    line-height: 24px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "\f105";
+      font-family: "icomoon";
+      font-size: 18px;
+      color: $green;
+      line-height: 18px;
+      left: 0;
+
+    }
+  }
+  
+}
+.personal__info-inner{
+  width: 100%;
+}
+.settings__inner{
+  padding: 34px 38px 80px;
+  color: #444;
+  button{
+    margin-left: 255px;
+    width: 108px;
+    height: 46px;
+    background-color: $green;
+    border: none;
+    font-size: 15px;
+    @include f500;
+    color: #fff;
+  }
+}
+.settings__line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+  label{
+
+  }
+  input,
+  select{
+    max-width: 540px;
+    width: 100%; 
+    height: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    color: #707070;
+    padding: 0px 16px;  
+  }
+  
+}
+.settings__form.tab-item.active-tab{
+  display: block;
+}
+
+// end personal-Info
 @import "media";
