@@ -1629,6 +1629,7 @@ button.icon-sort-amount-desc {
   .author__user-name {
     font-size: 18px;
     color: $bg;
+    @include f500;
   }
   .author__link {
     min-width: 92px;
@@ -1779,63 +1780,62 @@ button.icon-sort-amount-desc {
 }
 // end 404
 // start about
-.about__us-head{
+.about__us-head {
   color: $bg;
 }
-.about__us-inner{
+.about__us-inner {
   color: #707070;
   padding: 43px 48px 53px;
 }
-.about__us-title{
+.about__us-title {
   margin-bottom: 22px;
   font-size: 20px;
   @include f700;
   color: #444;
 }
-.about__us-text{
+.about__us-text {
   font-size: 15px;
   margin-bottom: 56px;
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 }
 // end about
 // start contacts
-.contact__head{
+.contact__head {
   padding: 25px 40px 29px;
 }
-.contact__head{
+.contact__head {
   color: $bg;
 }
-.contact__inner{
+.contact__inner {
   color: #000;
   padding: 32px 40px 15px;
-
 }
-.contact__maps{
+.contact__maps {
   margin-bottom: 60px;
-  iframe{
+  iframe {
     max-width: 1090px;
     width: 100%;
     height: 415px;
   }
 }
-.contact__box{
+.contact__box {
   display: flex;
 }
-.contact__items{
-  & + .contact__items{
+.contact__items {
+  & + .contact__items {
     margin-top: 32px;
   }
-  &:last-child{
+  &:last-child {
     margin-bottom: 25px;
   }
 }
-.contact__aders{
+.contact__aders {
   max-width: 273px;
   margin-right: 89px;
 }
-.contact__items-title{
+.contact__items-title {
   font-size: 20px;
   color: $bg;
   @include f500;
@@ -1843,81 +1843,79 @@ button.icon-sort-amount-desc {
   padding-bottom: 24px;
   margin-bottom: 26px;
   position: relative;
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 44px;
     height: 4px;
     background-color: $green;
     left: 40px;
     bottom: 0;
   }
-  
-
 }
-.contact__items-info{
+.contact__items-info {
   font-size: 15px;
   color: #707070;
   padding-left: 40px;
 }
-.phone{
+.phone {
   position: relative;
-  &::before{
+  &::before {
     position: absolute;
-    content: '\f095';
-    font-family: 'icomoon';
+    content: "\f095";
+    font-family: "icomoon";
     color: $green;
     left: 0;
     font-size: 24px;
   }
 }
-.envelope-o{
+.envelope-o {
   position: relative;
-  &::before{
+  &::before {
     position: absolute;
-    content: '\f003';
-    font-family: 'icomoon';
+    content: "\f003";
+    font-family: "icomoon";
     color: $green;
     left: 0;
     font-size: 24px;
   }
 }
-.map-marker{
+.map-marker {
   position: relative;
-  &::before{
+  &::before {
     position: absolute;
-    content: '\f041';
-    font-family: 'icomoon';
+    content: "\f041";
+    font-family: "icomoon";
     color: $green;
     left: 0;
     font-size: 24px;
   }
 }
-.contact__message-title{
+.contact__message-title {
   color: #333;
   font-size: 24px;
   @include f500;
   margin-bottom: 23px;
 }
-.contact__message-box{
+.contact__message-box {
   margin-bottom: 28px;
-  input{
+  input {
     background-color: #f1f4f5;
     border: none;
     width: 348px;
     height: 43px;
     padding: 0 17px;
-    &::placeholder{
+    &::placeholder {
       font-size: 15px;
       color: #7a7a7a;
     }
-    & + input{
+    & + input {
       margin-left: 25px;
     }
-  } 
+  }
 }
-.contact__message{
-  textarea{
+.contact__message {
+  textarea {
     width: 100%;
     height: 193px;
     margin-bottom: 22px;
@@ -1925,12 +1923,12 @@ button.icon-sort-amount-desc {
     resize: none;
     background-color: #f1f4f5;
     padding: 16px;
-    &::placeholder{
+    &::placeholder {
       font-size: 15px;
       color: #7a7a7a;
-    } 
+    }
   }
-  button{
+  button {
     width: 190px;
     height: 54px;
     background-color: $green;
@@ -1943,62 +1941,57 @@ button.icon-sort-amount-desc {
 }
 // end contacts
 // start personal-Info
-.settings__wrapper{
+.settings__wrapper {
   margin-bottom: 150px;
   display: flex;
 }
-.personal__info-inner{
+.personal__info-inner {
   margin-bottom: 0;
 }
-.settings__tabs{
+.settings__tabs {
   max-width: 270px;
   width: 100%;
   margin-right: 30px;
 }
-.tabs__list{
-  
-  
+.tabs__list {
   text-align: left;
   display: block;
-  span{ 
-  }
 }
-.settings__tabs{
+.settings__tabs {
   border: 1px solid #dedede;
   background-color: #fff;
   height: 100%;
-  li.tab{
+  li.tab {
     padding: 15px 21px;
     display: block;
     height: 51px;
     border-bottom: 1px solid #dedede;
     border-left: none;
-    &:last-child{
+    &:last-child {
       border-bottom: none;
     }
-    &.active{
+    &.active {
       border-bottom: 2px solid $green;
       // transform: rotateY(180deg);
-      
-      span{
-        &::before{
-          transition: all .5s;
-          transform: rotateZ(90deg);
+
+      span {
+        &::before {
+          transition: all 0.5s;
+          transform: rotateZ(-90deg);
+          color: $green;
         }
       }
-      
-    } 
+    }
   }
-  .tabs{
+  .tabs {
     border-bottom: none;
-    .tab{
-      & + .tab{
+    .tab {
+      & + .tab {
         border-left: none;
       }
     }
-   
   }
-  span{
+  span {
     height: 100%;
     padding: 0px 0px 0px 28px;
     display: block;
@@ -2006,26 +1999,24 @@ button.icon-sort-amount-desc {
     color: #37474f;
     line-height: 24px;
     position: relative;
-    &::before{
+    &::before {
       position: absolute;
-      content: "\f105";
+      content: "\f107";
       font-family: "icomoon";
       font-size: 18px;
-      color: $green;
+      // color: $green;
       line-height: 18px;
       left: 0;
-
     }
   }
-  
 }
-.personal__info-inner{
+.personal__info-inner {
   width: 100%;
 }
-.settings__inner{
+.settings__inner {
   padding: 34px 38px 80px;
   color: #444;
-  button{
+  button {
     margin-left: 255px;
     width: 108px;
     height: 46px;
@@ -2036,30 +2027,22 @@ button.icon-sort-amount-desc {
     color: #fff;
   }
 }
-.settings__line{
+.settings__line {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 21px;
-  label{
-
-  }
   input,
-  select{
+  select {
     max-width: 540px;
-    width: 100%; 
+    width: 100%;
     height: 40px;
     background-color: #f9f9f9;
     border: 1px solid #dedede;
     font-size: 14px;
     color: #707070;
-    padding: 0px 16px;  
+    padding: 0px 16px;
   }
-  
 }
-.settings__form.tab-item.active-tab{
-  display: block;
-}
-
 // end personal-Info
 @import "media";
