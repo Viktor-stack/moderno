@@ -993,11 +993,13 @@
 }
 // end footer
 // start product-page
-.product-page__inner {
+.product-page__inner,
+.profile-details__inner {
   padding-bottom: 110px;
   display: flex;
 }
-.product-page__aside {
+.product-page__aside,
+.profile-details__aside {
   margin-right: 30px;
 }
 .aside__item {
@@ -1960,7 +1962,7 @@ button.icon-sort-amount-desc {
 .settings__tabs {
   border: 1px solid #dedede;
   background-color: #fff;
-  height: 100%;
+  height: fit-content;
   li.tab {
     padding: 15px 21px;
     display: block;
@@ -1973,6 +1975,7 @@ button.icon-sort-amount-desc {
     &.active {
       border-bottom: 2px solid $green;
       // transform: rotateY(180deg);
+      @include f500;
 
       span {
         &::before {
@@ -2045,4 +2048,257 @@ button.icon-sort-amount-desc {
   }
 }
 // end personal-Info
+// start profile deteils
+.profile-details{
+  
+}
+
+.online__user {
+  display: block;
+  text-align: center;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: $green;
+    border-radius: 50%;
+    left: 11px;
+    top: 8px;
+  }
+}
+.profile-social {
+  margin-left: 4px;
+  margin-bottom: 26px;
+}
+.profile__deteils-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  a {
+    display: block;
+    text-align: center;
+    height: 53px;
+    padding: 15px 15px;
+    color: #fff;
+    font-size: 16px;
+    @include f500;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    & + a {
+      margin-top: 15px;
+    }
+  }
+  .link-message {
+    background-color: $text;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "\f003";
+      font-family: "icomoon";
+      font-size: 16px;
+      top: 14px;
+      left: 50px;
+    }
+  }
+  .link-foll {
+    background-color: $green;
+  }
+}
+.profile-details__tabs {
+  border: 1px solid #dedede;
+  background-color: #fff;
+  .tabs{
+    border-bottom: none;  
+  }
+  li.tab {
+    padding: 15px 21px;
+    display: block;
+    height: 51px;
+    border-bottom: 1px solid #dedede;
+    border-left: none !important;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    &.active {
+      border-bottom: 2px solid $green;
+      color: $bg;
+      @include f500;
+
+      span {
+        &::before {
+          transition: all 0.5s;
+          // transform: rotateZ(-90deg);
+          color: $green;
+        }
+      }
+    }
+    span {
+      height: 100%;
+      padding: 0px 0px 0px 28px;
+      display: block;
+      font-size: 14px;
+      // color: #37474f;
+      line-height: 24px;
+      position: relative;
+      @include  f500;
+    }
+    
+  }
+  .user{
+    position: relative;
+    &::before{
+      content: '\f007';
+      position: absolute;
+      font-family: 'icomoon';
+      font-size: 14px;
+      top: 2px;
+      left: 0;
+      line-height: 16px;
+    }
+  }
+  .suitcase{
+    position: relative;
+    &::before{
+      position: absolute;
+      content:'\f0f2';
+      font-family: 'icomoon';
+      font-size: 14px;
+      top: 2px;
+      left: 0;
+      line-height: 16px;
+    }
+  }
+  .envelope-o{
+    position: absolute;
+    &::before{
+      position: absolute;
+      content:'\f003';
+      font-family: 'icomoon';
+      font-size: 14px;
+      left: 0;
+      color: #707070;
+      line-height: 14px;
+      top: 3px;
+    }
+  }
+  .comments-o{
+    position: relative;
+    &::before{
+      position: absolute;
+      content:'\f0e6';
+      font-family: 'icomoon';
+      left: 0;
+      font-size: 14px;
+      line-height: 14px;
+      top: 3px;
+    }
+  }
+  .group{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '\f0c0';
+      font-family: 'icomoon';
+      font-size: 14px;
+      line-height: 14px;
+      left: 0;
+      top: 3px;
+    }
+  }
+  &.tab{
+    border-left: none;
+  }
+}
+.profile__deteils-info{
+  width: 100%;
+}
+.profile__deteils-banner{
+  background-color: #fff;
+  border: 1px solid #dedede;
+  padding: 19px;
+  margin-bottom: 30px;
+}
+.banner__here{
+  width: 100%;
+  height: 332px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.deteils__info{
+  border: 1px solid #dedede;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.info__items{
+  max-width: 217px;
+  width: 100%;
+  height: 80px; 
+  padding: 20px 0px 15px;
+  font-size: 14px;
+  color:$bg;
+  @include f500;
+  & + .info__items{
+    border-left: 1px solid #dedede;
+  }
+  text-align: center;
+  span{
+    @include f400;
+    display: inline-block;
+    color: #707070;
+  }
+}
+.about__me{
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  &-title{
+    font-size: 20px;
+    @include f700;
+    color: $bg;
+    margin-bottom: 25px;
+  }
+  &-text{
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    color: #707070;
+  }
+}
+.skills__head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: $bg;
+  margin-bottom: 14px;    
+}
+.skills__name{
+  @include f500;
+}
+.skills__number{
+  @include f700;
+}
+.skills__line{
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  span{
+    height: 15px;
+    border-radius: 4px;
+    display: block;
+    background-repeat: repeat;
+  }
+}
+.skills__box{
+  margin-bottom: 23px;
+}
+// end profile deteils
 @import "media";

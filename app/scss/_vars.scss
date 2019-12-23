@@ -15,8 +15,8 @@ $yellow: #fcb322;
   font-weight: 400;
 }
 @mixin f500 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500 !important;
 }
 @mixin Raleway700 {
   font-family: "Raleway", sans-serif;
