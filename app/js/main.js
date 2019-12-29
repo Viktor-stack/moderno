@@ -1,4 +1,7 @@
 $(function(){
+  $('input[type=file], select').styler({
+    locale: 'en',
+  });
 
   $('.product-slider__inner').slick({
     arrows: false,
@@ -67,10 +70,25 @@ $(function(){
   $('.menu__btn').on('click', function(){
     $('.menu__list').slideToggle();
   })
+
   $('.header__btn-menu').on('click', function(){
     $('.header__box').toggleClass('active');
+  })
+  
+  $('.menu__btn').on('click', function(){
+    $('.menu__btn').toggleClass('active');
   })
 
  var mixer = mixitup('.propducts__inner-box');
 
 });
+
+document.body.onload = function () {
+
+  setTimeout(function () {
+    var preloader = document.getElementById('preloader');
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+    }
+  }, 1000);
+}

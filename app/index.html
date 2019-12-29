@@ -12,6 +12,10 @@
 </head>
 
 <body>
+  <div id="preloader" class="preloader">
+    <div class="out"></div>
+    <div class="in"></div>
+  </div>
   <div class="wrapper">
     <div class="content">
       <header class="header">
@@ -163,9 +167,9 @@
           <div class="container">
             <nav class="menu">
               <div class="menu__btn">
+                <div class="menu__row one"></div>
                 <div class="menu__row"></div>
-                <div class="menu__row"></div>
-                <div class="menu__row"></div>
+                <div class="menu__row one"></div>
               </div>
               <ul class="menu__list">
                 <li>
@@ -1089,24 +1093,27 @@
       </div>
     </footer>
   </div>
-  <div id="modal">
-    <div class="login__wrapper">
-      <form>
-        <div class="login__title">
-          login
-        </div>
-        <label class="login-name">
-          <input type="text" placeholder="Login" required>
-        </label>
-        <label class="login-pass">
-          <input type="text" placeholder="Passworld" required>
-        </label>
-        <button type="submit">submit</button>
-        <a class="creat-acc" href="#">Creat An Account?</a>
-        <a class="lost-pass" href="#">Lost Password?</a>
-      </form>
+  
+<div id="modal">
+  <div class="login__wrapper">
+    <form method="POST" action="<?php ">
+      <div class="login__title">
+        login
+      </div>
+      <label class="login-name">
+        <input type="text" placeholder="Login" required>
+      </label>
+      <label class="login-pass">
+        <input type="password" placeholder="Passworld" required>
+      </label>
+      <div class="mabile__fics">
+      <button type="submit">submit</button>
+      <a class="creat-acc" href="#">Creat An Account?</a>
+      <a class="lost-pass" href="#">Lost Password?</a>
     </div>
+    </form>
   </div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

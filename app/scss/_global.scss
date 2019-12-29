@@ -1,64 +1,106 @@
-html{
+html {
   box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
-a{
+a {
   display: inline-block;
   text-decoration: none;
   color: $text;
 }
-ul,li{
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-body{
+body {
   @include f400;
   font-size: 15px;
   line-height: 24px;
   color: $text;
-  overflow-x: hidden;
+  overflow: auto;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 100500;
+  transition: all 1s;
+  opacity: 1;
+  visibility: visible;
+
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#preloader div.out {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -30px 0 0 -30px;
+  border: 6px solid #fff;
+  border-top-color: #be0027;
+  border-radius: 99px;
+  animation: spin 1.5s linear 0s infinite;
+}
+#preloader div.in {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  border: 6px solid #fff;
+  border-top-color: #38217d;
+  border-radius: 99px;
+  animation: spinr 1.5s linear 0s infinite;
 }
 .wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
 }
 .content {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.container-fluid{
+.container-fluid {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
 }
-@media(max-width: 720px){
-  .container__fluid{
+@media (max-width: 720px) {
+  .container__fluid {
     padding: 0 15px;
   }
 }
-.page-content{
+.page-content {
   background-color: $bg-products;
 }
-.title{
+.title {
   margin-bottom: 30px;
   text-align: center;
   color: $bg;
@@ -66,34 +108,34 @@ body{
   font-size: 36px;
   line-height: 60px;
 }
-.breadcrumbs{
-  &__inner{
+.breadcrumbs {
+  &__inner {
     padding: 45px 0px 40px;
   }
-  &__list{
-    li{
+  &__list {
+    li {
       display: inline-block;
       position: relative;
       & + li {
         padding-left: 24px;
-        &::before{
-          content: '-';
+        &::before {
+          content: "-";
           position: absolute;
           left: 8px;
           color: $green;
         }
       }
-      &:last-child{
+      &:last-child {
         a,
-        span{
+        span {
           font-size: 15px;
           @include f500;
           color: $bg;
         }
       }
     }
-    a{
-        color: #b0bec5;
+    a {
+      color: #b0bec5;
     }
   }
 }

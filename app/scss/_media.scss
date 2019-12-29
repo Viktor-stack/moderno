@@ -1,7 +1,15 @@
 @media (max-width: 1200px) {
-  .tutorials__inner{
+  .tutorials__inner {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .withd__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .earnings__box {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1150px) {
@@ -55,29 +63,28 @@
     border-left: 5px solid $green;
     border-right: 5px solid $green;
     border-radius: 10%;
-    a{
+    a {
       display: block;
       border-bottom: 1px solid #fff;
-      padding-bottom: 10px;   
+      padding-bottom: 10px;
     }
-    li{
+    li {
       display: block;
-      & + li{
+      & + li {
         margin-left: 0;
       }
     }
   }
-  .border--none{
+  .border--none {
     border: none !important;
   }
   .menu__btn {
     display: block;
     cursor: pointer;
-    
   }
 }
 @media (max-width: 960px) {
-  .advantages__inner{
+  .advantages__inner {
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -94,7 +101,7 @@
   }
 }
 @media (max-width: 520px) {
-  .ciecle__menu{
+  .ciecle__menu {
     right: auto;
   }
   .header__btn-menu {
@@ -134,6 +141,7 @@
   .menu__btn {
     position: absolute;
     top: 24px;
+    left: 8px;
     .menu__row {
       background-color: $bg;
     }
@@ -147,47 +155,92 @@
   .user__menu {
     top: 58px;
   }
-  .menu__list{
+  .menu__list {
     top: 70px;
   }
 }
-@media (max-width: 475px){
-  .user__box-items{
+@media (max-width: 600px) {
+  .content__list {
+    .line__inner {
+      margin-bottom: 20px;
+      display: flex;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .line__inner {
+    margin-bottom: 50px;
+    height: auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .user__box-items {
     display: none;
   }
-  .header__box.active{
+  .header__box.active {
     left: 104px;
   }
-  .user__menu{
+  .user__menu {
     top: 55px;
   }
 }
-@media (max-width: 420px){
-  .user__box{
+@media (max-width: 420px) {
+  .user__box {
     margin-right: 0;
   }
 }
-@media (max-width: 350px){
-  .header__box.active{
+@media (max-width: 350px) {
+  .header__box.active {
     left: 45px;
   }
 }
-@media (max-width: 380px){
-  .header__box.active{
+@media (max-width: 380px) {
+  .header__box.active {
     left: 45px;
   }
 }
-@media (max-width: 320px){
-  .header__box.active{
+@media (max-width: 320px) {
+  .history__box-content {
+    padding: 20px;
+    text-align: center;
+    .line__inner {
+      padding: 0;
+      flex-direction: column;
+      span {
+        & + span {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .header__btn-menu{
+    background-color: $green;
+  }
+  .header__menu{
+    background-color: $green;
+    height: 10px;
+  }
+  .withd__inner{
+    margin-bottom: 50px;
+  }
+  .earnings__box{
+    text-align: center;
+  }
+  .earnings__box-content {
+    padding: 32px 16px 50px 16px;
+    text-align: center;
+  }
+  .header__box.active {
     left: 38px;
   }
-  .ciecle__menu{
+  .ciecle__menu {
     left: -25px;
   }
-  .user__menu{
+  .user__menu {
     left: -27px;
   }
-  .header__logo{
+  .header__logo {
     margin-left: 56px;
   }
 }
