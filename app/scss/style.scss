@@ -5,6 +5,48 @@
 // start header
 .header {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+}
+.header__logo {
+  // display: flex;
+  // flex-direction: column;
+}
+.logo__dots {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  background-color: $green;
+  border-radius: 50%;
+  transition: all 5s;
+
+  &.color--red {
+    background-color: $red;
+  }
+}
+#animation1 {
+  animation: roov 2s cubic-bezier(0, 1.47, 1, 1) 5s infinite;
+}
+
+#animation2 {
+  animation: doot 2s cubic-bezier(0, 1.46, 1, 1) 5s infinite;
+}
+@keyframes roov {
+  50% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+@keyframes doot {
+  50% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
 }
 .header__top-inner {
   display: flex;
@@ -46,6 +88,7 @@
 }
 .header__menu {
   background-color: $bg;
+  border-bottom: 2px solid $green;
   a {
     color: #fff;
     font-size: 14px;
@@ -387,10 +430,10 @@
       0% {
         transform: rotate(0deg);
       }
-      
     }
     .menu__row.donne {
       background-color: transparent;
+      transition: none;
     }
     .menu__row.true {
       top: 0;
@@ -476,6 +519,7 @@
 // end login
 // start search
 .search {
+  margin-top: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -870,6 +914,8 @@
 //end tutorials
 // start footer
 .footer {
+  position: relative;
+  z-index: 60;
   background-color: $bg;
   &__inner {
     padding: 100px 0px 90px;
@@ -957,7 +1003,7 @@
   }
   input {
     display: block;
-    max-width: 260px;
+    max-width: 100%;
     min-height: 40px;
     width: 100%;
     padding-left: 14px;
@@ -966,9 +1012,13 @@
     background-color: #2f3c43;
     border: none;
     box-shadow: -0.9px -1px 11px #000;
+    transition: all 0.5s;
     &::placeholder {
       font-size: 14px;
       color: #697378;
+    }
+    &:focus-within {
+      min-height: 100px;
     }
   }
   button {
@@ -979,7 +1029,7 @@
     height: 40px;
     background-color: $green;
     bottom: 0;
-    right: 11px;
+    right: 0px;
     cursor: pointer;
     &::before {
       position: absolute;
@@ -2437,6 +2487,7 @@ button.icon-sort-amount-desc {
     font-size: 15px;
     @include f500;
     color: #fff;
+    cursor: pointer;
   }
 }
 .content__line {
@@ -2445,9 +2496,6 @@ button.icon-sort-amount-desc {
   align-items: center;
   & + .content__line {
     margin-top: 20px;
-  }
-  .file {
-    // width: 900px;
   }
   label {
     margin-right: 29px;
@@ -2627,6 +2675,9 @@ button.icon-sort-amount-desc {
   padding: 40px;
 
   .line__inner {
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
     span {
       display: block;
       & + span {
@@ -2647,9 +2698,6 @@ button.icon-sort-amount-desc {
     .scrip {
       @include f700;
     }
-  }
-  .color_bg {
-    background-color: #f9f9f9;
   }
 }
 .box__content-line {
@@ -2681,6 +2729,9 @@ button.icon-sort-amount-desc {
       overflow: hidden;
     }
   }
+}
+.fancybox-active.compensate-for-scrollbar {
+  overflow: overlay;
 }
 
 // end withdrawals

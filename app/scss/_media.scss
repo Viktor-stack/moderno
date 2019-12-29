@@ -101,6 +101,9 @@
   }
 }
 @media (max-width: 520px) {
+  .search{
+    margin-top: 130px;
+  }
   .ciecle__menu {
     right: auto;
   }
@@ -213,6 +216,15 @@
         }
       }
     }
+  }
+  .search{
+    margin-top: 80px;
+  }
+  .basket__box, .notification__box, .message__box{
+    padding-left: 8px;
+  }
+  .header__btn-Login{
+    margin-left: 0;
   }
   .header__btn-menu{
     background-color: $green;

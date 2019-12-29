@@ -35,7 +35,7 @@ body {
   right: 0;
   bottom: 0;
   background: #fff;
-  z-index: 100500;
+  z-index: 50;
   transition: all 1s;
   opacity: 1;
   visibility: visible;
@@ -53,7 +53,7 @@ body {
   top: 50%;
   margin: -30px 0 0 -30px;
   border: 6px solid #fff;
-  border-top-color: #be0027;
+  border-top-color: $green;
   border-radius: 99px;
   animation: spin 1.5s linear 0s infinite;
 }
@@ -65,10 +65,14 @@ body {
   top: 50%;
   margin: -20px 0 0 -20px;
   border: 6px solid #fff;
-  border-top-color: #38217d;
+  border-top-color: $bg;
   border-radius: 99px;
   animation: spinr 1.5s linear 0s infinite;
 }
+// .fixed{
+//   position: fixed;
+//   top: 0px;
+// }
 .wrapper {
   display: flex;
   flex-direction: column;
