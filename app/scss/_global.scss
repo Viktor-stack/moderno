@@ -36,7 +36,7 @@ body {
   bottom: 0;
   background: #fff;
   z-index: 50;
-  transition: all 1s;
+  transition: all .5s;
   opacity: 1;
   visibility: visible;
 
@@ -141,5 +141,29 @@ body {
     a {
       color: #b0bec5;
     }
+  }
+}
+.aside__btn{
+  @include f500;
+  font-size: 25px;
+  padding: 20px 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(69,90,100,0.75);
+  display: none;
+  .aside__btn-text{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    // transform: rotate(90deg);
+  }
+  width: 100%;
+  
+  background-color: $bg; 
+  &.active{
+    .aside__btn-text{
+      color: $bg;
+    }
+    background-color: $green;
   }
 }

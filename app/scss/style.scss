@@ -1090,6 +1090,8 @@
 }
 .product-page__aside,
 .profile-details__aside {
+  max-width: 270px;
+  width: 100%;
   margin-right: 30px;
 }
 .aside__item {
@@ -1553,6 +1555,9 @@ button.icon-sort-amount-desc {
   text-align: center;
   .tab {
     font-size: 16px;
+    a{
+      display: block;
+    }
 
     color: #70838d;
     padding: 18px 20px;
@@ -1667,6 +1672,11 @@ button.icon-sort-amount-desc {
   font-size: 22px;
   color: $tometo;
   @include f500;
+}
+.jq-file.file,
+.jq-selectbox.jqselect{
+  max-width: 900px;
+  width: 100%;  
 }
 .product__price {
   .jq-file input,
@@ -1902,7 +1912,7 @@ button.icon-sort-amount-desc {
   margin-bottom: 37px;
 }
 .page__404-text {
-  width: 506px;
+  max-width: 506px;
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 18px;
@@ -1970,7 +1980,8 @@ button.icon-sort-amount-desc {
   }
 }
 .contact__aders {
-  max-width: 273px;
+  
+  min-width: 273px;
   margin-right: 89px;
 }
 .contact__items-title {
@@ -2029,6 +2040,9 @@ button.icon-sort-amount-desc {
     font-size: 24px;
   }
 }
+.contact__message{
+  width: 100%;
+}
 .contact__message-title {
   color: #333;
   font-size: 24px;
@@ -2036,6 +2050,9 @@ button.icon-sort-amount-desc {
   margin-bottom: 23px;
 }
 .contact__message-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 28px;
   input {
     background-color: #f1f4f5;
@@ -2153,6 +2170,7 @@ button.icon-sort-amount-desc {
   width: 100%;
 }
 .settings__inner {
+  max-width: 868px;
   padding: 34px 38px 80px;
   color: #444;
   button {
@@ -2165,10 +2183,12 @@ button.icon-sort-amount-desc {
     @include f500;
     color: #fff;
   }
+  .jq-selectbox.jqselect{
+    max-width: 540px;
+    height: 40px;
+  }
   .jq-file input,
   .jq-selectbox__select {
-    width: 540px;
-    height: 40px;
     padding: 0 17px;
     border: 1px solid #dddddd;
     border-bottom-color: #dddddd;
@@ -2532,7 +2552,6 @@ button.icon-sort-amount-desc {
 }
 .jq-file input,
 .jq-selectbox__select {
-  width: 900px;
   height: 40px;
   padding: 0 17px;
   border: 1px solid #dddddd;
@@ -2686,6 +2705,7 @@ button.icon-sort-amount-desc {
     }
     color: #444444;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     min-height: 40px;
     padding: 0px 37px 0px 20px;

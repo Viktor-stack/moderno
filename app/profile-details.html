@@ -23,9 +23,13 @@
           <div class="container">
             <div class="header__top-inner">
               <div class="header__logo">
+                <div class="logo__animatoon">
+                  <div class="logo__dots" id="animation1"></div>
+                  <div class="logo__dots color--red"></div>
+                  <div class="logo__dots" id="animation2"></div>
+                </div>
                 <a href="http://localhost:3000">
-
-                  <img src="img/logo.png" alt="">
+                  <img src="img/logo2.png" alt="">
                 </a>
               </div>
               <div class="header__text">
@@ -167,9 +171,9 @@
           <div class="container">
             <nav class="menu">
               <div class="menu__btn">
-                <div class="menu__row"></div>
-                <div class="menu__row"></div>
-                <div class="menu__row"></div>
+                <div class="menu__row one"></div>
+                <div class="menu__row donne"></div>
+                <div class="menu__row true"></div>
               </div>
               <ul class="menu__list">
                 <li>
@@ -261,11 +265,16 @@
       </div>
       <!--Хлебные крошки-->
 
+
       <div/div class="profile-details">
         <div class="container">
+          <div class="aside__btn">
+            <div class="aside__btn-text">sidebar</div>
+          </div>
           <div class="profile-details__inner">
+
             <aside class="profile-details__aside">
-              <div class="aside__item">
+              <div class="aside__item" id="mobile_fiksed">
                 <div class="aside__title">
                   Product Author
                 </div>
@@ -314,21 +323,34 @@
               <div class="profile-details__tabs">
                 <ul class="tabs tabs__list">
                   <li class="tab active" data-id="1">
-                    <span class="user">About Me</span>
+                    <div id="menu">
+                      <a href="#tabs"><span class="user">About Me</span></a>
+                    </div>
                   </li>
+                  </a>
                   <li class="tab" data-id="2">
-                    <span class="suitcase">Products (10)</span>
+                    <div id="menu2">
+                      <a href="#tabs"><span class="suitcase">Products (10)</span></a>
+                    </div>
                   </li>
                   <li class="tab " data-id="3">
-                    <span class="envelope-o">Message Box</span>
+                    <div id="menu3">
+                      <a href="#tabs"><span class="envelope-o">Message Box</span></a>
+                    </div>
                   </li>
                   <li class="tab" data-id="4">
-                    <span class="comments-o">Customer Reviews (20)</span>
+                    <div id="menu4">
+                      <a href="#tabs"><span class="comments-o">Customer Reviews (20)</span></a>
+                    </div>
                   </li>
                   <li class="tab " data-id="5">
-                    <span class="group">Followers(100)</span>
+                    <div id="menu5">
+                      <a href="#tabs"><span class="group">Followers(100)</span></a>
+                    </div>
                   </li>
+
                 </ul>
+
               </div>
             </aside>
 
@@ -341,7 +363,7 @@
                   <div class="info__items-title">Country:</div>
                   <span>England</span>
                 </div>
-                <div class="info__items">
+                <div class="info__items fics--border" id="tabs" name="tabs">
                   <div class="info__items-title">Member Since:</div>
                   <span>December 26, 2014</span>
                 </div>

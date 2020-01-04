@@ -78,22 +78,25 @@ $(function(){
   $('.menu__btn').on('click', function(){
     $('.menu__btn').toggleClass('active');
   })
+  $('.aside__btn').on('click', function(){
+    $('.profile-details__aside, .aside__btn').toggleClass('active');
+  })
+
+  $("#menu, #menu2, #menu3, #menu4,#menu5").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 1500 мс
+    $('header,html').animate({ scrollTop: top }, 1000);
+  })
 
  var mixer = mixitup('.propducts__inner-box');
-
-  // var offset = $(".header").offset();
-  // // var sticky = document.getElementById("sticky-header");
-
-  // $(window).scroll(function () {
-
-  //   if ($('body').scrollTop() > offset.top) {
-  //     $('.header').addClass('fixed');
-  //   } else {
-  //     $('.header').removeClass('fixed');
-  //   }
-
-  // });
-
 });
 
 document.body.onload = function () {
@@ -103,6 +106,5 @@ document.body.onload = function () {
     if (!preloader.classList.contains('done')) {
       preloader.classList.add('done');
     }
-  }, 1000);
+  }, 0);
 }
-
