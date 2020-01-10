@@ -55,7 +55,7 @@ body {
   border: 6px solid #fff;
   border-top-color: $green;
   border-radius: 99px;
-  animation: spin 1.5s linear 0s infinite;
+  animation: spin 1s linear 0s infinite;
 }
 #preloader div.in {
   width: 40px;
@@ -67,7 +67,7 @@ body {
   border: 6px solid #fff;
   border-top-color: $bg;
   border-radius: 99px;
-  animation: spinr 1.5s linear 0s infinite;
+  animation: spinr 1s linear 0s infinite;
 }
 // .fixed{
 //   position: fixed;
@@ -115,6 +115,8 @@ body {
 .breadcrumbs {
   &__inner {
     padding: 45px 0px 40px;
+    overflow: hidden;
+    width: 1200px;
   }
   &__list {
     li {
@@ -146,10 +148,10 @@ body {
 .aside__btn{
   @include f500;
   font-size: 25px;
-  padding: 20px 20px;
+  padding: 10px 20px;
   border-radius: 25px;
   margin-bottom: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(69,90,100,0.75);
+      box-shadow: 0px 4px 17px 9px rgba(69,90,100,0.75);
   display: none;
   .aside__btn-text{
     color: #fff;

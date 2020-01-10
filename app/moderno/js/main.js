@@ -158,7 +158,7 @@ $(window).on("scroll load", function(event) {
     $(".header").removeClass("hide-menu");
   }
   if ($(window).scrollTop() <= 100) {
-    $(".header")
+    $(".header-main")
       // .removeClass(".header-fixed")
       .removeClass("hide-menu");
   } else if (
